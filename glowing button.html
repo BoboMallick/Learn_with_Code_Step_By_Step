@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1>Supriyo</h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glowing button</title>
+    <!-- <link rel="stylesheet" href="glow.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(2, 2, 17);
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            border-top: 3px solid rgb(253, 114, 0);
+            border-left: 3px solid rgb(255, 251, 0);
+            border-bottom: 3px solid rgb(136, 255, 0);
+            border-right: 3px solid rgb(0, 255, 170);
+            color: white;
+            width: 150px;
+            height: 60px;
+            border-radius: 30PX;
+            box-shadow: 6px 6px 30px rgba(136, 255, 0, 0.3),
+                -6px -6px 30px rgba(255, 153, 0, 0.3),
+                inset 0px -5px 1px rgb(33 33 33);
+
+            font-size: 20px;
+            font-family: 'Acme', sans-serif;
+            
+        }
+
+        button:hover{
+            background-color: rgb(43, 43, 43);
+            /* animation-name: button;
+            animation-duration: 1s;
+            animation-iteration-count: 1; */
+
+            animation: button 0.8s ease-in 0s 1 alternate;
+        }
+
+        @keyframes button {
+            0%{
+                font-size: 20px;
+            }
+
+            50%{
+                font-size: 15px;
+            }
+            75%{
+                font-size: 25px;
+            }
+            100%{
+                font-size: 20px;
+            }
+        }
+
+    @media (max-width:700px) {
+        button {
+            border-top: 3px solid rgb(253, 114, 0);
+            border-left: 3px solid rgb(255, 251, 0);
+            border-bottom: 3px solid rgb(136, 255, 0);
+            border-right: 3px solid rgb(0, 255, 170);
+            color: white;
+            width: 95px;
+            height: 35px;
+            border-radius: 13PX;
+            box-shadow: 6px 6px 30px rgba(136, 255, 0, 0.3),
+                -6px -6px 30px rgba(255, 153, 0, 0.3),
+                inset 0px -5px 1px rgb(33 33 33);
+
+            font-size: 19px;
+            font-family: 'Acme', sans-serif;
+            
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="outer">
+            <button type="reset">Reset All</button>
+        </div>
+    </div>
+</body>
+
+</html>
