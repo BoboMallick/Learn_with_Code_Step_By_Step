@@ -1,0 +1,15 @@
+h1{
+    background-image: repeating-radial-gradient(blue,red,yellow,blue,green,red 50%);
+    height:300px;
+    width:300px;
+}
+h2{
+    background-image: repeating-radial-gradient(black,gray,white 25%);
+    height:300px;
+    width:300px;
+}
+h3{
+    background-image: repeating-radial-gradient(white,gray,black 25%);
+    height:300px;
+    width:300px;
+}
